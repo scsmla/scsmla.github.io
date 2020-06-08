@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/chmod-caculator/precache-manifest.1b90b0a681d5d567f8113c8107d0faee.js"
+  "/precache-manifest.1b90b0a681d5d567f8113c8107d0faee.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/chmod-caculator/index.html"), {
-  
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/index.html"), {
+
   blacklist: [/^\/_/,/\/[^\/?]+\.[^\/]+$/],
 });
